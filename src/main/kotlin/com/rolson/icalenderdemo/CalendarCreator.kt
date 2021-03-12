@@ -31,9 +31,8 @@ fun main(args: Array<String>) {
     createCancelledInvite(uid)
 }
 
-private fun createInitialInvite(
-        uid: String
-) {
+private fun createInitialInvite(uid: String) {
+
     val start = Date.from(Instant.now().plus(1, ChronoUnit.DAYS))
     val end = Date.from(start.toInstant().plus(1, ChronoUnit.HOURS))
     val sequence = 0
@@ -48,9 +47,8 @@ private fun createInitialInvite(
     writer.close()
 }
 
-private fun createUpdatedInvite(
-        uid: String
-) {
+private fun createUpdatedInvite(uid: String) {
+
     val start = Date.from(Instant.now().plus(2, ChronoUnit.DAYS))
     val end = Date.from(start.toInstant().plus(1, ChronoUnit.HOURS))
     val sequence = 1
@@ -65,9 +63,8 @@ private fun createUpdatedInvite(
     writer.close()
 }
 
-private fun createCancelledInvite(
-        uid: String
-) {
+private fun createCancelledInvite(uid: String) {
+
     val sequence = 2
     val attendees = createAttendees(EMAILS)
 
