@@ -18,11 +18,11 @@ import java.time.temporal.ChronoUnit
 import java.util.*
 import kotlin.collections.ArrayList
 
-const val DEFAULT_METHOD: String = Method.REQUEST
-const val INVITE_FILE: String = "invite.ics"
-const val UPDATED_EVENT_FILE: String = "update.ics"
-const val CANCEL_EVENT_FILE: String = "cancel.ics"
-val EMAILS: List<String> = arrayListOf("rodneyolson1@gmail.com", "rodolson96@outlook.com")
+private const val DEFAULT_METHOD: String = Method.REQUEST
+private const val INVITE_FILE: String = "invite.ics"
+private const val UPDATED_EVENT_FILE: String = "update.ics"
+private const val CANCEL_EVENT_FILE: String = "cancel.ics"
+private val EMAILS: List<String> = arrayListOf("rodneyolson1@gmail.com", "rodolson96@outlook.com")
 
 fun main(args: Array<String>) {
     val uid = UUID.randomUUID().toString()
